@@ -10,10 +10,15 @@ const HOLE = "O";
 const HAT = "^";
 
 // Hardcoded board
+// let board = [
+// 	[PLAYER, EMPTY, HOLE],
+// 	[EMPTY, HOLE, EMPTY],
+// 	[EMPTY, HAT, EMPTY],
+// ];
 let board = [
-	[PLAYER, EMPTY, HOLE],
-	[EMPTY, HOLE, EMPTY],
-	[EMPTY, HAT, EMPTY],
+	[[PLAYER], [EMPTY], [HOLE]],
+	[[EMPTY], [HOLE], [EMPTY]],
+	[[EMPTY], [HAT], [EMPTY]],
 ];
 
 // Game state

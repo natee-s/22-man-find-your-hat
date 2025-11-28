@@ -117,3 +117,42 @@
 [Back to Table of Contents](#table-of-contents)
 
 ---
+<!-- Thinking Process -->
+1. start game
+2. create board (hardcoded or generated)
+-	input: [row][col]
+-	Output: 2D array
+-	edge cases: board tiles don’t overlap
+3. print board
+-	input: 2D array
+-	output: console display of board
+-	edge cases: none
+4. crate board tiles
+-	PLAYER = "*" - Current player position
+-	EMPTY = "░" - Walkable tile
+-	HOLE = "O" - Losing tile
+-	HAT = "^" - Winning tile
+5. playing game
+5.1 user input
+-	input: string (w,a,s,d)
+-	output: display on board
+-	edge cases: invalid input
+5.2 check input
+-	input: string
+-	output: Boolean
+-	edge cases: invalid input
+5.3 move to new location
+-	input: string (w,a,s,d)
+-	output: new position (new row,col)
+-	edge cases: boundaries
+5.4 check game rules
+-	Input: position and board
+-	Output: win, lose, continue
+-	Edge Cases: boundaries, hole/hat tiles
+5.5 update board
+-	Input: position 
+-	Output: new position
+-	Edge Cases: boundaries, hole/hat tiles
+5.6 Create loop
+-	user input  check input  move check game rules update board
+6. end game
